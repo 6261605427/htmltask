@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Boxes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="box" id="box1" onclick="toggleBox('box1')">
+    <h2>Box 1</h2>
+    <div class="options" id="options1">
+      <p>Select Color:</p>
+      <button onclick="changeColor('box1', 'red')">Red</button>
+      <button onclick="changeColor('box1', 'blue')">Blue</button>
+      <button onclick="changeColor('box1', 'green')">Green</button>
+      <p>Select Size:</p>
+      <button onclick="changeSize('box1', 'small')">Small</button>
+      <button onclick="changeSize('box1', 'medium')">Medium</button>
+      <button onclick="changeSize('box1', 'large')">Large</button>
+    </div>
+  </div>
+
+  <div class="box" id="box2" onclick="toggleBox('box2')">
+    <h2>Box 2</h2>
+    <div class="options" id="options2">
+      <p>Select Color:</p>
+      <button onclick="changeColor('box2', 'yellow')">Yellow</button>
+      <button onclick="changeColor('box2', 'purple')">Purple</button>
+      <button onclick="changeColor('box2', 'orange')">Orange</button>
+      <p>Select Size:</p>
+      <button onclick="changeSize('box2', 'small')">Small</button>
+      <button onclick="changeSize('box2', 'medium')">Medium</button>
+      <button onclick="changeSize('box2', 'large')">Large</button>
+    </div>
+  </div>
+
+  <div class="box" id="box3" onclick="toggleBox('box3')">
+    <h2>Box 3</h2>
+    <div class="options" id="options3">
+      <p>Select Color:</p>
+      <button onclick="changeColor('box3', 'pink')">Pink</button>
+      <button onclick="changeColor('box3', 'teal')">Teal</button>
+      <button onclick="changeColor('box3', 'brown')">Brown</button>
+      <p>Select Size:</p>
+      <button onclick="changeSize('box3', 'small')">Small</button>
+      <button onclick="changeSize('box3', 'medium')">Medium</button>
+      <button onclick="changeSize('box3', 'large')">Large</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
